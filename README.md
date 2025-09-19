@@ -84,7 +84,8 @@ Elements affected:
 - \<div class="submit-btn">Send Message\</div>
 
 Fix:
-TODO
+- Changed \<div class="submit-btn">Send Message\</div> to \<button class="submit-btn">Send Message\</button>
+- Updated the css class "submit-btn" so that it appears as it did before
 
 #### HTML5 landmark elements are used to improve navigation
 Elements affected: 
@@ -104,7 +105,7 @@ Fix:
     - \<nav class="nav">
     - \<main class="content">
     - \<footer class="footer">
-
+commit: 231cb03f08f8c72be205d3263ca7146b09f5f74f (This has other changes as well so its not the cleanest commit)
 
 ### Issues found with [Wave](https://wave.webaim.org/)
 #### Missing form label
