@@ -1,0 +1,16 @@
+{
+  "name": "m2-hw2-abreu-victoria",
+  "version": "1.0.0",
+  "description": "In this assignment you will create a basic single page website. This will help you become familiar with using both Semantic and non-semantic HTML to create webpages.",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fell67",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/css": "^0.11.0",
+    "html-code-standards-plugin": "file:../html-code-standards-plugin"
+  }
+}

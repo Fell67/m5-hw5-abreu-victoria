@@ -17,7 +17,7 @@ body {
   max-width: 1800px;
 }
 
-.nav {
+nav {
   background-color: #333;
   padding: 20px;
   display: flex;
@@ -25,10 +25,35 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-.nav a {
+nav a {
   text-decoration: none;
   color: #555; 
   font-weight: bold;
+}
+
+main {
+  padding: 140px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #333;
+  color: #555;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 
 .hero {
@@ -46,22 +71,6 @@ body {
 .hero h1 {
   font-size: 48px;
   margin: 0;
-}
-
-.content {
-  padding: 140px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.content h3 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.content p {
-  font-size: 16px;
-  line-height: 1.6;
 }
 
 .form-section {
@@ -111,15 +120,6 @@ textarea::placeholder {
 
 textarea:focus {
   outline: none;
-}
-
-.footer {
-  margin-top: auto;
-  background-color: #333;
-  color: #555;
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
 }
 
 .icon {

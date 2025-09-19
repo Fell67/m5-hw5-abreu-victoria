@@ -17,7 +17,7 @@ In this assignment, you will learn about auditing websites for accessibility iss
 ## Instructions
 
 1. Using an accessibility tool of your choice (or multiple), audit the website as it exists for issues.
-1. Fix the accessibility issues, continuing to audit to ensure that no issues exist. Annotate the fixes for your audits in the README file in the repository.
+1. Fix the accessibility issues, continuing to audit to ensure that no issues exist. Annotate the fixes for your audits in the README file in the repository. ([See Site Audit](#site-audit))
     1. You must preserve the content of the site as you fix issues.
     1. You may adjust colors as necessary to add contrast.
     1. You may change or add HTML tags to fix structural and/or semantic issues, but be sure you do not break any CSS selectors in `style.css` when you do so.
@@ -42,3 +42,96 @@ Your site should be deployed to `<your github username>.github.io/<your reposito
 Please submit both a link to your repository and a link to the live site. Also please include any comments on stumbling blocks or difficulties encountered while completing the assignment.
 
 Website URL: https://fell67.github.io/m5-hw5-abreu-victoria/
+
+&nbsp;
+## Site Audit
+### Issues found with Eslint Plugins
+
+- Property 'backdrop-filter' is not a widely available baseline feature (css/use-baseline)
+- Invalid value '0 1px solid rgba(255,255,255,0.77)' for property 'border'. Expected line-width || line-style || color (css/no-invalid-properties)
+- Property 'resize' is not a widely available baseline feature (css/use-baseline)
+- Use fallback fonts and a generic font last (css/font-family-fallbacks)
+- Property 'outline' is not a widely available baseline feature (css/use-baseline)
+
+### Issues Found with Lighthouse
+#### Background and foreground colors do not have a sufficient contrast ratio
+Elements affected:
+- \<a href="#">Home\</a>
+- \<a href="#">Portfolio\</a>
+- \<a href="#">Contact\</a>
+- \<h3>Reach out for a quote today!\</h3>
+- \<div class="footer"> \<span class="icon">📞\</span> Call me anytime! \</div>
+
+Fix:
+TODO
+
+#### Heading elements are not in a sequentially-descending order
+Elements affected:
+- \<h3>About Me\</h3>
+
+Fix:
+TODO
+
+#### Interactive controls are keyboard focusable
+Elements affected:
+- \<div class="submit-btn">Send Message\</div>
+
+Fix:
+TODO
+
+#### Interactive elements indicate their purpose and state, The page has a logical tab order, and Custom controls have ARIA roles
+Elements affected:
+- \<div class="submit-btn">Send Message\</div>
+
+Fix:
+TODO
+
+#### HTML5 landmark elements are used to improve navigation
+Elements affected: 
+- \<div class="nav">
+- \<div class="hero">
+- \<div class="content">
+- \<div class="form-section">
+- \<div class="footer">
+
+Fix:
+- Changed \<div class="nav"> to <nav class="nav">
+- Placed \<div class="nav"> and \<div class="hero"> into a header
+- Changed \<div class="content"> to \<main class="content">
+- Changed \<div class="form-section"> to \<aside class="form-section">
+- Changed \<div class="footer"> to \<footer class="footer">
+- Removed the classes from the following and updated the css file to make it clearer
+    - \<nav class="nav">
+    - \<main class="content">
+    - \<footer class="footer">
+
+
+### Issues found with [Wave](https://wave.webaim.org/)
+#### Missing form label
+Elements affected:
+- \<input type="text" placeholder="Your Name"/>
+- \<input type="email" placeholder="Your Email"/>
+- \<textarea rows="10" placeholder="Your Message">\</textarea\>
+
+Fix:
+TODO
+
+#### Contrast Errors
+Elements affected
+- \<a href="#">Home\</a> (Note: [Found with Lighthouse](#background-and-foreground-colors-do-not-have-a-sufficient-contrast-ratio))
+- \<a href="#">Portfolio\</a> (Note: [Found with Lighthouse](#background-and-foreground-colors-do-not-have-a-sufficient-contrast-ratio))
+- \<a href="#">Contact\</a> (Note: [Found with Lighthouse](#background-and-foreground-colors-do-not-have-a-sufficient-contrast-ratio))
+- \<h1>Internet Andrea</h1>
+- \<h3>About Me</h3>
+- All the paragraphs in the about me section
+- \<h3>Reach out for a quote today!\</h3> (Note: [Found with Lighthouse](#background-and-foreground-colors-do-not-have-a-sufficient-contrast-ratio))
+- \<div class="footer"> \<span class="icon">📞\</span> Call me anytime! \</div> (Note: [Found with Lighthouse](#background-and-foreground-colors-do-not-have-a-sufficient-contrast-ratio))
+
+Fix:
+TODO
+
+#### No Page regions
+For example not using header, nav, main, footer, or aside HTML regions, or banner. This was also [found with Lighthouse](#HTML5-landmark-elements-are-used-to-improve-navigation) go to the section titled "HTML5 landmark elements are used to improve navigation" for more information about what elements were affected and the fix.
+
+#### Skipped heading level
+This was also [found with Lighthouse](#heading-elements-are-not-in-a-sequentially-descending-order) go to the section titled "Heading elements are not in a sequentially-descending order" for more information about what elements were affected and the fix.
