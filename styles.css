@@ -96,8 +96,9 @@ textarea {
 }
 
 textarea {
-  resize: vertical;
   font-family: inherit;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 input::placeholder,

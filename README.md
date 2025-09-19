@@ -69,7 +69,8 @@ TODO
 Affects the body element
 
 Fixes:
-Looks
+- We are using 'sans-serif' as are fallback font. According to [W3 Schools](https://www.w3schools.com/css/css_font_fallbacks.asp) this is a commonly used fallback. Downgraded this error to a warning in the eslint.config.js.
+commit: 8587aca14d2ec2ea9a7484f14dc564cfa59d16e4
 
 #### Property 'outline' is not a widely available baseline feature (css/use-baseline)
 Affects the textarea on focus
@@ -80,7 +81,8 @@ Note: Removing the CSS outline is considered bad accessibility because it makes 
 - https://www.w3schools.com/css/css_accessibility.asp
 
 Fixes:
-- They are using the CSS outline property to hide an outline when the element is focused. This is bad accessibility! Since the inputs use the standard styling for their outlines and we want the form to be accessible I removed this style from the css sheet.
+- They are using the CSS outline property to hide an outline when the element is focused, this is bad accessibility. Since the inputs use the standard styling for their outlines and we want the form to be accessible I removed this style from the css sheet.
+commit: 8587aca14d2ec2ea9a7484f14dc564cfa59d16e4
 
 ### Issues Found with Lighthouse
 #### Background and foreground colors do not have a sufficient contrast ratio
