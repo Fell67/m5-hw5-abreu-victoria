@@ -147,7 +147,7 @@ Elements affected:
 - \<div class="footer">
 
 Fix:
-- Changed \<div class="nav"> to <nav class="nav">
+- Changed \<div class="nav"> to \<nav class="nav">
 - Placed \<div class="nav"> and \<div class="hero"> into a header
 - Changed \<div class="content"> to \<main class="content">
 - Changed \<div class="form-section"> to \<aside class="form-section">
