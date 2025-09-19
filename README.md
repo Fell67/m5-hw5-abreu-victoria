@@ -118,9 +118,10 @@ Elements affected:
 - \<textarea rows="10" placeholder="Your Message">\</textarea\>
 
 Fix:
-- Changed \<input type="text" placeholder="Your Name"/> to <input type="text" placeholder="Your Name" title="Your Name" aria-labelledby="Your Name"/>
-- Changed \<input type="email" placeholder="Your Email"/> to <input type="email" placeholder="Your Email" title="Your Email" aria-labelledby="Your Email"/>
-- Changed \<textarea rows="10" placeholder="Your Message">\</textarea\> to <textarea rows="10" placeholder="Your Message" title="Your Message" aria-labelledby="Your Message"></textarea>
+- Changed \<input type="text" placeholder="Your Name"/> to <input type="text" placeholder="Your Name" title="Your Name" aria-label="Your Name"/>
+- Changed \<input type="email" placeholder="Your Email"/> to <input type="email" placeholder="Your Email" title="Your Email" aria-label="Your Email"/>
+- Changed \<textarea rows="10" placeholder="Your Message">\</textarea\> to <textarea rows="10" placeholder="Your Message" title="Your Message" aria-label="Your Message"></textarea>
+commit: df2df68066298c9c17e708e50dd2230ac783de67 
 
 #### Contrast Errors
 Elements affected
