@@ -57,7 +57,7 @@ Fixes:
 #### Invalid value '0 1px solid rgba(255,255,255,0.77)' for property 'border'. Expected line-width || line-style || color (css/no-invalid-properties)
 Affects the body element
 
-Research: [According to MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border) and [W3 Schools](https://www.w3schools.com/css/css_border_shorthand.asp) the border shorthand style accepts the values of three individual border properties (border-width, border-style, and border-color) separated by spaces
+Research: [According to MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border) and [W3 Schools](https://www.w3schools.com/css/css_border_shorthand.asp) the border shorthand style accepts the values of three individual border properties (border-width, border-style, and border-color) separated by spaces. This property has four values instead of the the max of three.
 
 Fixes:
 - When a CSS property has an invalid value the CSS doesn't render the property so I removed it and verified that no changes were noticed
