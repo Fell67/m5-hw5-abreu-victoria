@@ -49,8 +49,11 @@ Website URL: https://fell67.github.io/m5-hw5-abreu-victoria/
 #### Property 'backdrop-filter' is not a widely available baseline feature (css/use-baseline)
 Affects the body element
 
+Research: [According to MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) as of September 2024 this feature became available on devices and browsers however it might not work on older devices or browsers.
+
 Fixes:
-TODO
+- Since this property is now considered a baseline feature I am going to leave it as is
+
 #### Invalid value '0 1px solid rgba(255,255,255,0.77)' for property 'border'. Expected line-width || line-style || color (css/no-invalid-properties)
 Affects the body element
 
@@ -58,6 +61,7 @@ Research: [According to MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/bo
 
 Fixes:
 - When a CSS property has an invalid value the CSS doesn't render the property so I removed it and verified that no changes were noticed
+commit: 78bdeb7070f24dadb684360f9981a64c83872c0c
 
 #### Property 'resize' is not a widely available baseline feature (css/use-baseline)
 Affects the textarea element
@@ -80,7 +84,8 @@ commit: 8587aca14d2ec2ea9a7484f14dc564cfa59d16e4
 #### Property 'outline' is not a widely available baseline feature (css/use-baseline)
 Affects the textarea on focus
 
-Research: Removing the CSS outline on focus is considered bad accessibility because it makes it harder for keyboard users to realize that they are focused on an element. See the following posts
+Research: 
+[According to MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/outline) as of March 2023 this feature became available on devices and browsers however it might not work on older devices or browsers. However removing the CSS outline on focus is considered bad accessibility because it makes it harder for keyboard users to realize that they are focused on an element. See the following posts
 - https://www.a11yproject.com/posts/never-remove-css-outlines/#:%7E:text=Using%20the%20CSS%20rule%20%3Afocus,with%20the%20link%20or%20control.
 - https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html
 - https://www.w3schools.com/css/css_accessibility.asp
