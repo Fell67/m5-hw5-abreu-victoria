@@ -54,34 +54,39 @@ TODO
 #### Invalid value '0 1px solid rgba(255,255,255,0.77)' for property 'border'. Expected line-width || line-style || color (css/no-invalid-properties)
 Affects the body element
 
-Why it should be fixed:
+Research: [According to MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border) and [W3 Schools](https://www.w3schools.com/css/css_border_shorthand.asp) the border shorthand style accepts the values of three individual border properties (border-width, border-style, and border-color) separated by spaces
 
 Fixes:
-TODO
+- When a CSS property has an invalid value the CSS doesn't render the property so I removed it and verified that no changes were noticed
 
 #### Property 'resize' is not a widely available baseline feature (css/use-baseline)
 Affects the textarea element
 
+Research: [According to MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/resize) this feature still has limited availability
+
 Fixes:
-TODO
+- Updated the CSS for the textarea to have a max and min width of 100% in order to allow all users to have the same functionality that some of the users were getting with the resize property
+commit: 98a954ac1687fb1d00b25672701b2bec2d3d148e
 
 #### Use fallback fonts and a generic font last (css/font-family-fallbacks)
 Affects the body element
 
+Research: We are using 'sans-serif' as are fallback font. [According to W3 Schools](https://www.w3schools.com/css/css_font_fallbacks.asp) this is a commonly used fallback.
+
 Fixes:
-- We are using 'sans-serif' as are fallback font. According to [W3 Schools](https://www.w3schools.com/css/css_font_fallbacks.asp) this is a commonly used fallback. Downgraded this error to a warning in the eslint.config.js.
+- Downgraded this error to a warning in the eslint.config.js.
 commit: 8587aca14d2ec2ea9a7484f14dc564cfa59d16e4
 
 #### Property 'outline' is not a widely available baseline feature (css/use-baseline)
 Affects the textarea on focus
 
-Note: Removing the CSS outline is considered bad accessibility because it makes it harder for keyboard users to realize that they are focused on an element. See the following posts
+Research: Removing the CSS outline on focus is considered bad accessibility because it makes it harder for keyboard users to realize that they are focused on an element. See the following posts
 - https://www.a11yproject.com/posts/never-remove-css-outlines/#:%7E:text=Using%20the%20CSS%20rule%20%3Afocus,with%20the%20link%20or%20control.
 - https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html
 - https://www.w3schools.com/css/css_accessibility.asp
 
 Fixes:
-- They are using the CSS outline property to hide an outline when the element is focused, this is bad accessibility. Since the inputs use the standard styling for their outlines and we want the form to be accessible I removed this style from the css sheet.
+- Since the inputs use the standard styling for their outlines and we want the form to be accessible I removed this style from the css sheet.
 commit: 8587aca14d2ec2ea9a7484f14dc564cfa59d16e4
 
 ### Issues Found with Lighthouse
