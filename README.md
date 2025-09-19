@@ -70,22 +70,16 @@ Elements affected:
 - \<h3>About Me\</h3>
 
 Fix:
-TODO
+- Changed \<h3>About Me\</h3> to \<h2>About Me\</h2> and updated associated CSS style
 
-#### Interactive controls are keyboard focusable
-Elements affected:
-- \<div class="submit-btn">Send Message\</div>
-
-Fix:
-TODO
-
-#### Interactive elements indicate their purpose and state, The page has a logical tab order, and Custom controls have ARIA roles
+#### Interactive elements indicate their purpose and state, The page has a logical tab order, Custom controls have ARIA roles, and Interactive controls are keyboard focusable
 Elements affected:
 - \<div class="submit-btn">Send Message\</div>
 
 Fix:
 - Changed \<div class="submit-btn">Send Message\</div> to \<button class="submit-btn">Send Message\</button>
 - Updated the css class "submit-btn" so that it appears as it did before
+commit: 1fa3ae0ed9027e94485943cc2ff3f7bca4484673
 
 #### HTML5 landmark elements are used to improve navigation
 Elements affected: 
