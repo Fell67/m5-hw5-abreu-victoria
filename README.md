@@ -46,12 +46,41 @@ Website URL: https://fell67.github.io/m5-hw5-abreu-victoria/
 &nbsp;
 ## Site Audit
 ### Issues found with Eslint Plugins
+#### Property 'backdrop-filter' is not a widely available baseline feature (css/use-baseline)
+Affects the body element
 
-- Property 'backdrop-filter' is not a widely available baseline feature (css/use-baseline)
-- Invalid value '0 1px solid rgba(255,255,255,0.77)' for property 'border'. Expected line-width || line-style || color (css/no-invalid-properties)
-- Property 'resize' is not a widely available baseline feature (css/use-baseline)
-- Use fallback fonts and a generic font last (css/font-family-fallbacks)
-- Property 'outline' is not a widely available baseline feature (css/use-baseline)
+Fixes:
+TODO
+#### Invalid value '0 1px solid rgba(255,255,255,0.77)' for property 'border'. Expected line-width || line-style || color (css/no-invalid-properties)
+Affects the body element
+
+Why it should be fixed:
+
+Fixes:
+TODO
+
+#### Property 'resize' is not a widely available baseline feature (css/use-baseline)
+Affects the textarea element
+
+Fixes:
+TODO
+
+#### Use fallback fonts and a generic font last (css/font-family-fallbacks)
+Affects the body element
+
+Fixes:
+Looks
+
+#### Property 'outline' is not a widely available baseline feature (css/use-baseline)
+Affects the textarea on focus
+
+Note: Removing the CSS outline is considered bad accessibility because it makes it harder for keyboard users to realize that they are focused on an element. See the following posts
+- https://www.a11yproject.com/posts/never-remove-css-outlines/#:%7E:text=Using%20the%20CSS%20rule%20%3Afocus,with%20the%20link%20or%20control.
+- https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html
+- https://www.w3schools.com/css/css_accessibility.asp
+
+Fixes:
+- They are using the CSS outline property to hide an outline when the element is focused. This is bad accessibility! Since the inputs use the standard styling for their outlines and we want the form to be accessible I removed this style from the css sheet.
 
 ### Issues Found with Lighthouse
 #### Background and foreground colors do not have a sufficient contrast ratio
@@ -121,7 +150,7 @@ Fix:
 - Changed \<input type="text" placeholder="Your Name"/> to <input type="text" placeholder="Your Name" title="Your Name" aria-label="Your Name"/>
 - Changed \<input type="email" placeholder="Your Email"/> to <input type="email" placeholder="Your Email" title="Your Email" aria-label="Your Email"/>
 - Changed \<textarea rows="10" placeholder="Your Message">\</textarea\> to <textarea rows="10" placeholder="Your Message" title="Your Message" aria-label="Your Message"></textarea>
-commit: df2df68066298c9c17e708e50dd2230ac783de67 
+commit: df2df68066298c9c17e708e50dd2230ac783de67 and 75b56f3958183dd5a70458bb0bc473825d79218f
 
 #### Contrast Errors
 Elements affected

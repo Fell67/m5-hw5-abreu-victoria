@@ -118,10 +118,6 @@ textarea::placeholder {
   text-align: left;  
 }
 
-textarea:focus {
-  outline: none;
-}
-
 .icon {
   font-size: 24px;
   margin-right: 10px;

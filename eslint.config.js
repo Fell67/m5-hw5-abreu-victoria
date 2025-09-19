@@ -27,6 +27,7 @@ export default defineConfig([
         language: "css/css",
         extends: ["css/recommended"],
         rules: {
+            "css/font-family-fallbacks": "warn"
         }
     }
 ]);
