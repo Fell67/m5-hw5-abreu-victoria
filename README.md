@@ -61,7 +61,8 @@ Research: [According to MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/bo
 
 Fixes:
 - When a CSS property has an invalid value the CSS doesn't render the property so I removed it and verified that no changes were noticed
-commit: 78bdeb7070f24dadb684360f9981a64c83872c0c
+
+commit: [78bdeb7070f24dadb684360f9981a64c83872c0c](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/78bdeb7070f24dadb684360f9981a64c83872c0c)
 
 #### Property 'resize' is not a widely available baseline feature (css/use-baseline)
 Affects the textarea element
@@ -70,7 +71,8 @@ Research: [According to MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/re
 
 Fixes:
 - Updated the CSS for the textarea to have a max and min width of 100% in order to allow all users to have the same functionality that some of the users were getting with the resize property
-commit: 98a954ac1687fb1d00b25672701b2bec2d3d148e
+
+commit: [98a954ac1687fb1d00b25672701b2bec2d3d148e](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/98a954ac1687fb1d00b25672701b2bec2d3d148e)
 
 #### Use fallback fonts and a generic font last (css/font-family-fallbacks)
 Affects the body element
@@ -79,7 +81,8 @@ Research: We are using 'sans-serif' as are fallback font. [According to W3 Schoo
 
 Fixes:
 - Downgraded this error to a warning in the eslint.config.js.
-commit: 8587aca14d2ec2ea9a7484f14dc564cfa59d16e4
+
+commit: [8587aca14d2ec2ea9a7484f14dc564cfa59d16e4](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/8587aca14d2ec2ea9a7484f14dc564cfa59d16e4)
 
 #### Property 'outline' is not a widely available baseline feature (css/use-baseline)
 Affects the textarea on focus
@@ -92,7 +95,8 @@ Research:
 
 Fixes:
 - Since the inputs use the standard styling for their outlines and we want the form to be accessible I removed this style from the css sheet.
-commit: 8587aca14d2ec2ea9a7484f14dc564cfa59d16e4
+
+commit: [8587aca14d2ec2ea9a7484f14dc564cfa59d16e4](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/8587aca14d2ec2ea9a7484f14dc564cfa59d16e4)
 
 ### Issues Found with Lighthouse
 #### Background and foreground colors do not have a sufficient contrast ratio
@@ -111,7 +115,8 @@ Fix:
     - \<a href="#">Contact\</a>
 - Updated \<h3>Reach out for a quote today!\</h3> to be black
 - Updated \<div class="footer"> \<span class="icon">📞\</span> Call me anytime! \</div> to have a gray background and black text
-commit: 88891ac82724f349ac428659f6794253e10b2780
+
+commit: [88891ac82724f349ac428659f6794253e10b2780](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/88891ac82724f349ac428659f6794253e10b2780)
 
 
 #### Heading elements are not in a sequentially-descending order
@@ -120,7 +125,8 @@ Elements affected:
 
 Fix:
 - Changed \<h3>About Me\</h3> to \<h2>About Me\</h2> and updated associated CSS style
-commit: e84b8fe92361c8360c34f02cf9b4c34788a93852
+
+commit: [e84b8fe92361c8360c34f02cf9b4c34788a93852](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/e84b8fe92361c8360c34f02cf9b4c34788a93852)
 
 #### Interactive elements indicate their purpose and state, The page has a logical tab order, Custom controls have ARIA roles, and Interactive controls are keyboard focusable
 Elements affected:
@@ -129,7 +135,8 @@ Elements affected:
 Fix:
 - Changed \<div class="submit-btn">Send Message\</div> to \<button class="submit-btn">Send Message\</button>
 - Updated the css class "submit-btn" so that it appears as it did before
-commit: 1fa3ae0ed9027e94485943cc2ff3f7bca4484673
+
+commit: [1fa3ae0ed9027e94485943cc2ff3f7bca4484673](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/1fa3ae0ed9027e94485943cc2ff3f7bca4484673)
 
 #### HTML5 landmark elements are used to improve navigation
 Elements affected: 
@@ -149,7 +156,8 @@ Fix:
     - \<nav class="nav">
     - \<main class="content">
     - \<footer class="footer">
-commit: 231cb03f08f8c72be205d3263ca7146b09f5f74f (This has other changes as well so its not the cleanest commit)
+
+commit: [231cb03f08f8c72be205d3263ca7146b09f5f74f](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/231cb03f08f8c72be205d3263ca7146b09f5f74f) (This has other changes as well so its not the cleanest commit)
 
 ### Issues found with [Wave](https://wave.webaim.org/)
 #### Missing form label
@@ -162,7 +170,8 @@ Fix:
 - Changed \<input type="text" placeholder="Your Name"/> to <input type="text" placeholder="Your Name" title="Your Name" aria-label="Your Name"/>
 - Changed \<input type="email" placeholder="Your Email"/> to <input type="email" placeholder="Your Email" title="Your Email" aria-label="Your Email"/>
 - Changed \<textarea rows="10" placeholder="Your Message">\</textarea\> to <textarea rows="10" placeholder="Your Message" title="Your Message" aria-label="Your Message"></textarea>
-commit: df2df68066298c9c17e708e50dd2230ac783de67 and 75b56f3958183dd5a70458bb0bc473825d79218f
+
+commit: [df2df68066298c9c17e708e50dd2230ac783de67](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/df2df68066298c9c17e708e50dd2230ac783de67) and [75b56f3958183dd5a70458bb0bc473825d79218f](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/75b56f3958183dd5a70458bb0bc473825d79218f)
 
 #### Contrast Errors
 Elements affected
@@ -179,7 +188,8 @@ Fix:
 - To see fixes for the problems that were identified with Lighthouse go to [Background and foreground colors do not have a sufficient contrast ratio](#background-and-foreground-colors-do-not-have-a-sufficient-contrast-ratio)
 - Updated \<h1>Internet Andrea</h1> to be black on semi-transparent gray background
 - Updated \<h3>About Me</h3> and all the paragraphs in the about me section to have gray text
-commit: 88891ac82724f349ac428659f6794253e10b2780
+
+commit: [88891ac82724f349ac428659f6794253e10b2780](https://github.com/Fell67/m5-hw5-abreu-victoria/tree/88891ac82724f349ac428659f6794253e10b2780)
 
 #### No Page regions
 For example not using header, nav, main, footer, or aside HTML regions, or banner. This was also [found with Lighthouse](#HTML5-landmark-elements-are-used-to-improve-navigation) go to the section titled "HTML5 landmark elements are used to improve navigation" for more information about what elements were affected and the fix.
