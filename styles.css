@@ -6,7 +6,6 @@ html {
 body {
   margin: 0 auto;
   font-family: "Segoe UI", sans-serif;
-  color: #999;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -18,7 +17,7 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color: rgb(238, 238, 238);
   padding: 20px;
   display: flex;
   justify-content: space-around;
@@ -27,7 +26,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #555; 
+  color: black; 
   font-weight: bold;
 }
 
@@ -49,8 +48,7 @@ main p {
 
 footer {
   margin-top: auto;
-  background-color: #333;
-  color: #555;
+  background-color: rgb(238, 238, 238);
   padding: 20px;
   text-align: center;
   font-size: 14px;
@@ -64,18 +62,18 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: lightpink;
   text-align: center;
 }
 
 .hero h1 {
   font-size: 48px;
   margin: 0;
+  background-color: rgb(238, 238, 238, .80);
 }
 
 .form-section {
   width: 65%;
-  background-color: #eee;
+  background-color: rgb(238, 238, 238);
   padding: 20px 20px 40px;
   margin: 0 auto 100px;
 }

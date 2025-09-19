@@ -63,7 +63,14 @@ Elements affected:
 - \<div class="footer"> \<span class="icon">📞\</span> Call me anytime! \</div>
 
 Fix:
-TODO
+- Updated \<nav> to be gray
+- Updated the following elements to be black
+    - \<a href="#">Home\</a>
+    - \<a href="#">Portfolio\</a>
+    - \<a href="#">Contact\</a>
+- Updated \<h3>Reach out for a quote today!\</h3> to be black
+- Updated \<div class="footer"> \<span class="icon">📞\</span> Call me anytime! \</div> to have a gray background and black text
+
 
 #### Heading elements are not in a sequentially-descending order
 Elements affected:
@@ -71,6 +78,7 @@ Elements affected:
 
 Fix:
 - Changed \<h3>About Me\</h3> to \<h2>About Me\</h2> and updated associated CSS style
+commit: e84b8fe92361c8360c34f02cf9b4c34788a93852
 
 #### Interactive elements indicate their purpose and state, The page has a logical tab order, Custom controls have ARIA roles, and Interactive controls are keyboard focusable
 Elements affected:
@@ -123,7 +131,9 @@ Elements affected
 - \<div class="footer"> \<span class="icon">📞\</span> Call me anytime! \</div> (Note: [Found with Lighthouse](#background-and-foreground-colors-do-not-have-a-sufficient-contrast-ratio))
 
 Fix:
-TODO
+- To see fixes for the problems that were identified with Lighthouse go to [Background and foreground colors do not have a sufficient contrast ratio](#background-and-foreground-colors-do-not-have-a-sufficient-contrast-ratio)
+- Updated \<h1>Internet Andrea</h1> to be black on semi-transparent gray background
+- Updated \<h3>About Me</h3> and all the paragraphs in the about me section to have gray text
 
 #### No Page regions
 For example not using header, nav, main, footer, or aside HTML regions, or banner. This was also [found with Lighthouse](#HTML5-landmark-elements-are-used-to-improve-navigation) go to the section titled "HTML5 landmark elements are used to improve navigation" for more information about what elements were affected and the fix.
