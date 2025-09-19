@@ -70,6 +70,7 @@ Fix:
     - \<a href="#">Contact\</a>
 - Updated \<h3>Reach out for a quote today!\</h3> to be black
 - Updated \<div class="footer"> \<span class="icon">📞\</span> Call me anytime! \</div> to have a gray background and black text
+commit: 88891ac82724f349ac428659f6794253e10b2780
 
 
 #### Heading elements are not in a sequentially-descending order
@@ -117,7 +118,9 @@ Elements affected:
 - \<textarea rows="10" placeholder="Your Message">\</textarea\>
 
 Fix:
-TODO
+- Changed \<input type="text" placeholder="Your Name"/> to <input type="text" placeholder="Your Name" title="Your Name" aria-labelledby="Your Name"/>
+- Changed \<input type="email" placeholder="Your Email"/> to <input type="email" placeholder="Your Email" title="Your Email" aria-labelledby="Your Email"/>
+- Changed \<textarea rows="10" placeholder="Your Message">\</textarea\> to <textarea rows="10" placeholder="Your Message" title="Your Message" aria-labelledby="Your Message"></textarea>
 
 #### Contrast Errors
 Elements affected
@@ -134,6 +137,7 @@ Fix:
 - To see fixes for the problems that were identified with Lighthouse go to [Background and foreground colors do not have a sufficient contrast ratio](#background-and-foreground-colors-do-not-have-a-sufficient-contrast-ratio)
 - Updated \<h1>Internet Andrea</h1> to be black on semi-transparent gray background
 - Updated \<h3>About Me</h3> and all the paragraphs in the about me section to have gray text
+commit: 88891ac82724f349ac428659f6794253e10b2780
 
 #### No Page regions
 For example not using header, nav, main, footer, or aside HTML regions, or banner. This was also [found with Lighthouse](#HTML5-landmark-elements-are-used-to-improve-navigation) go to the section titled "HTML5 landmark elements are used to improve navigation" for more information about what elements were affected and the fix.
