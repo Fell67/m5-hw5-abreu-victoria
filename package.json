@@ -1,7 +1,7 @@
 {
-  "name": "m2-hw2-abreu-victoria",
+  "name": "m5-hw5-abreu-victoria",
   "version": "1.0.0",
-  "description": "In this assignment you will create a basic single page website. This will help you become familiar with using both Semantic and non-semantic HTML to create webpages.",
+  "description": "In this assignment, you will learn about auditing websites for accessibility issues.",
   "main": "index.html",
   "type": "module",
   "scripts": {
